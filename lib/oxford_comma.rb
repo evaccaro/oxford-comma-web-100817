@@ -1,4 +1,5 @@
 def oxford_comma(array)
 answer = array.join(", ")
-answer.insert(-array.length, "and")
+last_word = array[-1]
+answer.insert(-last_word, "and")
 end
